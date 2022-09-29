@@ -9,7 +9,12 @@ namespace WebApplication3.Controllers
 {
     public class AddTenController : ApiController
     {
-        // GET api/AddTen
+        // <summary>
+        // This method gets the result of id + 1
+        // <example>input id = 10</example>
+        // <returns>21 + 10 = 31</returns>
+        //</summary>
+        // GET api/AddTen/{id}
         public IEnumerable<int> Get(int id)
         {
             return new int[] { id + 10 };

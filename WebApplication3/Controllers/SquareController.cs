@@ -9,7 +9,12 @@ namespace WebApplication3.Controllers
 {
     public class SquareController : ApiController
     {
-        // GET api/Square
+        // <summary>
+        // This method gets the result of id * id
+        // <example>input id = 10</example>
+        // <returns>10 * 10 = 100</returns>
+        //</summary>
+        // GET api/Square/{id}
         public IEnumerable<int> Get(int id)
         {
             return new int[] { id * id };
